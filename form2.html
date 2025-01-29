@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="save.php" method="get">
+      <table align="center" cellpadding="15" width="70%">
+        <caption>
+          <h1>Create account</h1>
+        </caption>
+        <tr>
+          <th>Applicatiopn No</th>
+          <td colspan="3"><input type="number" value="1233456" name="appno" readonly required /></td>
+        </tr>
+        <tr>
+          <th>First Name</th>
+          <td><input type="text" name="fname" /></td>
+          <th>Last Name</th>
+          <td><input type="text" name="lname" /></td>
+        </tr>
+        <tr>
+          <th>Mobile</th>
+          <td><input type="number" /></td>
+          <th>Email</th>
+          <td><input type="email" /></td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td><input type="radio" value="male" name="gender" checked /> Male <input type="radio" value="female" name="gender" /> Female</td>
+        </tr>
+        <tr>
+          <th>DOB</th>
+          <td><input type="datetime-local" name="datetime" /></td>
+        </tr>
+        <tr>
+          <th>State name</th>
+          <td>
+            <select>
+              <option>------Choose-------</option>
+
+              <option>Karnataka</option>
+              <option selected>Tamilnadu</option>
+              <option>Maharastra</option>
+              <option>Other.....</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <th>City name</th>
+          <td>
+            <select multiple size="3">
+              <option>------Choose-------</option>
+              <optgroup label="karnataka">
+                <option>City 1</option>
+                <option>City 2</option>
+                <option>City 3</option>
+              </optgroup>
+              <optgroup label="Tamilnadu">
+                <option>City 6</option>
+                <option>City 7</option>
+                <option>City 8</option>
+              </optgroup>
+              <optgroup label="Maharastra">
+                <option>City 9</option>
+                <option>City 10</option>
+                <option>City 11</option>
+              </optgroup>
+            </select>
+          </td>
+        </tr>
+        <tr valign="top">
+          <th>Terms and conditions</th>
+          <td colspan="3">
+            <input type="checkbox" value="agree" readonly="readonly" checked /> I agree <br /><br />
+
+            <details>
+              <summary>read More...</summary>
+              <small>
+                dbsjdjbsdjb bjdsfj jbjdsf mbksdf mbdsb mbcmx cmbcjsdbfmbfmdsbfs mbfdsbfm mxbc smbmdsbmf mbm mbmdfs mmfbkmdsf mbkmsdf mbfmdsb Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sequi corrupti temporibus iste illum quia molestias suscipit velit dolorem! Recusandae beatae nulla nihil nisi in nam corporis vitae molestias pariatur repellendus!
+              </small>
+            </details>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="4">
+            <button type="submit">submit</button>
+            <button type="reset">reset</button>
+          </th>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

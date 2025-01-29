@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table align="center" cellpadding="15">
+      <tr>
+        <th width="200" style="font-size: 30px; color: red">First Enquiry</th>
+        <th><a href="index.html">Home</a></th>
+        <th><a href="service.html">Our Services</a></th>
+        <th><a href="project.html">Recent Project</a></th>
+        <th><a href="contact.html"> Contact Us</a></th>
+      </tr>
+    </table>
+    <hr color="grey" size="5" />
+    <table align="center" cellpadding="20" width="80%">
+      <tr>
+        <th style="color: red; font-size: 35px">Website Development</th>
+        <th style="color: blue; font-size: 35px">App Development</th>
+        <th style="color: green; font-size: 35px">Digital Marketting</th>
+      </tr>
+      <tr>
+        <td>
+          <img src="1.jpg" height="250" width="100%" />
+        </td>
+        <td>
+          <img src="2.jpg" height="250" width="100%" />
+        </td>
+        <td>
+          <img src="3.jpg" height="250" width="100%" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint sequi tempore explicabo, quod odit vitae rem enim veniam deleniti totam a, ex dolor? Dolorum iste illo quidem
+          exercitationem officia.
+        </td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint sequi tempore explicabo, quod odit vitae rem enim veniam deleniti totam a, ex dolor? Dolorum iste illo quidem
+          exercitationem officia.
+        </td>
+        <td>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto sint sequi tempore explicabo, quod odit vitae rem enim veniam deleniti totam a, ex dolor? Dolorum iste illo quidem
+          exercitationem officia.
+        </td>
+      </tr>
+      <tr align="right">
+        <td><a href="">Read More....</a></td>
+        <td><a href="">Read More....</a></td>
+        <td><a href="">Read More....</a></td>
+      </tr>
+    </table>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+            $.ajax({
+              type: "GET",
+      Header:
+              contentType: "application/json; charset=utf-8",
+              url: "https://www.cricbuzz.com/api/cricket-match/commentary/94372",
+
+              success: function (data) {
+                console.log(data);
+              },
+              error: function (data, ajaxOptions, thrownError) {
+                onAPIError("error", data);
+              },
+            });
+    </script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="message.py" method="post">
+      <caption></caption>
+      <h1>Contact uS</h1>
+      <p>*marks fields are mandatory</p>
+      <table align="center" cellpadding="15">
+        <tr>
+          <th>Your name:<font color="red">*</font></th>
+          <td>
+            <input
+              type="text"
+              placeholder="Enter your name"
+              name="fname"
+              tabindex="1"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Your Email:</th>
+          <td>
+            <input
+              type="email"
+              placeholder="Enter your Email"
+              tabindex="4"
+              name="email"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Your Mobile:<font color="red">*</font></th>
+          <td>
+            <input
+              type="number"
+              placeholder="Enter your Mobile"
+              name="mobile"
+              tabindex="2"
+              required
+            />
+          </td>
+        </tr>
+        <tr>
+          <th>Your Msg:<font color="red">*</font></th>
+          <td>
+            <textarea
+              placeholder="enter your message"
+              rows="10"
+              cols="40"
+              name="my msg"
+              tabindex="3"
+              required
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <th colspan="2">
+            <button type="submit">Send msg</button>
+            <button type="reset">reset msg</button>
+          </th>
+          <td></td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
